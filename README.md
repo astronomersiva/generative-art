@@ -26,6 +26,12 @@ canvas-sketch sketch.js --open
 
 <img alt="Flowers" src="flower/flower-double.jpg" width="25%" />
 
+#### Blossom
+
+<img alt="Blossom" src="blossom/blossom.png" width="25%" />
+
+<img alt="Blossom" src="blossom/blossom-alternate.png" width="25%" />
+
 ### License
 
 © 2019 Sivasubramanyam A. All rights reserved.

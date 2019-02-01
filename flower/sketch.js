@@ -1,10 +1,10 @@
 const canvasSketch = require('canvas-sketch');
 
-let size = window.innerWidth / 4;
-let dpr = window.devicePixelRatio;
+const size = window.innerWidth / 4;
+const dpr = window.devicePixelRatio;
 
-let width = size * dpr;
-let height = (width / 9) * 16;
+const width = size * dpr;
+const height = (width / 9) * 16;
 
 const settings = {
   dimensions: [width, height]
@@ -27,7 +27,6 @@ const sketch = () => {
 
     for (let i = 0; i <= 6000; i++) {
       context.beginPath();
-      context.fillStyle = 'black';
 
       let angle = i * 4.424;
       let x = cx + Math.cos(angle) * i * Math.PI/75;
