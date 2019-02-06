@@ -38,6 +38,10 @@ canvas-sketch sketch.js --open
 
 <img alt="Savannah" src="savannah/savannah-fresh.jpg" width="25%" />
 
+#### Lissajous Curve
+
+<img alt="Lissajous Curve" src="lissajous/lissajous-small.gif" width="25%" />
+
 ### License
 
 © 2019 Sivasubramanyam A. All rights reserved.

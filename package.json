@@ -18,6 +18,7 @@
   "homepage": "https://github.com/astronomersiva/generative-art#readme",
   "dependencies": {
     "b-spline": "^2.0.1",
-    "canvas-sketch": "^0.2.0"
+    "canvas-sketch": "^0.2.0",
+    "canvas-sketch-util": "^1.6.0"
   }
 }
