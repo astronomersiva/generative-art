@@ -42,6 +42,24 @@ canvas-sketch sketch.js --open
 
 <img alt="Lissajous Curve" src="lissajous/lissajous-small.gif" width="25%" />
 
+#### Strange Attractors
+
+###### Lorenz Attractor
+
+<img alt="Lorenz Attractor XY" src="strange-attractors/lorenz/lorenz-xy.jpg" width="25%" />
+
+<img alt="Lorenz Attractor XZ" src="strange-attractors/lorenz/lorenz-xz.jpg" width="25%" />
+
+###### De Jong Attractor
+
+<img alt="De Jong Attractor" src="strange-attractors/de-jong/de-jong-1.jpg" width="25%" />
+
+<img alt="De Jong Attractor" src="strange-attractors/de-jong/de-jong-2.jpg" width="25%" />
+
+<img alt="De Jong Attractor" src="strange-attractors/de-jong/de-jong-3.jpg" width="25%" />
+
+<img alt="De Jong Attractor" src="strange-attractors/de-jong/de-jong-4.jpg" width="25%" />
+
 ### License
 
 © 2019 Sivasubramanyam A. All rights reserved.

@@ -1,6 +1,8 @@
 const canvasSketch = require('canvas-sketch');
 const bSpline = require('b-spline');
 
+const pointOnCircumference = require('../utils/pointOnCircumference');
+
 const size = window.innerWidth / 4;
 const dpr = window.devicePixelRatio;
 
@@ -10,13 +12,6 @@ const height = width;
 const settings = {
   dimensions: [width, height]
 };
-
-const pointOnCircumference = (xc, yc, r, theta) => {
-  return {
-    x: xc + r * Math.cos(theta),
-    y: yc + r * Math.sin(theta)
-  };
-}
 
 const sketch = () => {
   return ({ context, width, height }) => {
