@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input {
+        width: 50%;
+      }
+      #canvas {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div>
+      <label for="R">R</label>
+      <input oninput="handleOnChange()" type="range" id="R" name="R" min="-150" max="150">
+    </div>
+    
+    <div>
+      <label for="r">r</label>
+      <input oninput="handleOnChange()" type="range" id="r" name="r" min="-150" max="150">
+    </div>
+    
+    <div>
+      <label for="d">d</label>
+      <input oninput="handleOnChange()" type="range" id="d" name="d" min="-150" max="150">
+    </div>
+    
+    <div>
+      <label for="n">n</label>
+      <input oninput="handleOnChange()" type="range" id="n" name="n" min="1" max="150">
+    </div>
+
+    <script defer>
+      let canvas = document.getElementById('canvas');
+      let context = canvas.getContext('2d');
+      let dpr = window.devicePixelRatio;
+
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight * 5;
+
+      context.lineWidth = 1;
+
+      let cx = canvas.width / 2;
+      let cy = canvas.height / 2;
+
+      function drawSpirograph(context, cx, cy, radius1, radius2, d, n) {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = '#052029';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.strokeStyle = '#E5AEB3';
+
+        context.beginPath();
+        let x;
+        let y;
+
+        for (let theta = 0; theta <= Math.PI * n; theta += 0.01) {
+          x = cx + (radius1 + radius2) * Math.cos(theta) - d * Math.cos(theta * ((radius1+radius2) / radius2));
+          y = cy + (radius1 + radius2) * Math.sin(theta) - d * Math.sin(theta * ((radius1+radius2) / radius2));
+          context.lineTo(x, y);
+        }
+
+        context.stroke();
+      }
+
+      function handleOnChange() {
+        let R = parseInt(document.getElementById('R').value);
+        let r = parseInt(document.getElementById('r').value);
+        let d = parseInt(document.getElementById('d').value);
+        let n = parseInt(document.getElementById('n').value);
+
+        drawSpirograph(context, canvas.width / 2, canvas.height / 2, R, r, d, n);
+      }
+
+      // initial state
+      document.getElementById('R').value = '-100';
+      document.getElementById('r').value = '20';
+      document.getElementById('d').value = '50';
+      document.getElementById('n').value = '90';
+
+      drawSpirograph(context, canvas.width / 2, canvas.height / 2, -100, 20, 50, 100);
+    </script>
+  </body>
+</html>

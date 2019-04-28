@@ -60,6 +60,12 @@ canvas-sketch sketch.js --open
 
 <img alt="De Jong Attractor" src="strange-attractors/de-jong/de-jong-4.jpg" width="25%" />
 
+###### Spirographs
+
+<img alt="Spirographs" src="spirographs/spirographs-1.png" width="25%" />
+
+<img alt="Spirographs" src="spirographs/spirographs-2.png" width="25%" />
+
 ### License
 
 © 2019 Sivasubramanyam A. All rights reserved.
