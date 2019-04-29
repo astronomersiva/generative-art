@@ -66,6 +66,10 @@ canvas-sketch sketch.js --open
 
 <img alt="Spirographs" src="spirographs/spirographs-2.png" width="25%" />
 
+###### Truchet with a hint of randomness
+
+<img alt="Truchet Tiles" src="truchet/truchet.png" width="25%" />
+
 ### License
 
 © 2019 Sivasubramanyam A. All rights reserved.
