@@ -70,6 +70,10 @@ canvas-sketch sketch.js --open
 
 <img alt="Truchet Tiles" src="truchet/truchet.png" width="25%" />
 
+###### Circles
+
+<img alt="Circles" src="circles/circles.jpg" width="25%" />
+
 ### License
 
 © 2019 Sivasubramanyam A. All rights reserved.
